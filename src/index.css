@@ -14,3 +14,12 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.slick-slide > div {
+  margin: 8px;
+}
+
+.slick-arrow:before {
+  color: red;
+  font-size: 20px;
+}

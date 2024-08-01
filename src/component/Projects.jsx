@@ -1,61 +1,116 @@
-import React from "react";
+// import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export const Projects = () => {
+  const data = [
+    {
+      id: 1,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 2,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 3,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 4,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 5,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 6,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 7,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 8,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 9,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+    {
+      id: 10,
+      video: "https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz",
+      description:
+        "As a professional video editor, I transform raw footage into polished, engaging stories. With expertise in cutting, arranging, and refining content, I enhance narratives through seamless transitions and precise audio integration.",
+    },
+  ];
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="px-2 my-8 sm:px-40">
-      <h1 className="text-lg font-bold text-center text-gray-800 md:text-4xl border-b-2 ">
-        Projects Category
-      </h1>
-      <div className="flex flex-col justify-between items-center md:grid md:grid-cols-2 place-items-center gap-6 mt-4">
-        <div className="border-solid border-2 border-l-indigo-100 rounded-lg p-4 w-11/12 shadow-lg hover:scale-105 duration-100 cursor-pointer  md:w-full  md:flex justify-between items-center gap-3">
-          <div className="flex justify-center items-center">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div>
-            <h1 className="font-bold text-lg  my-1 text-gray-800 ">
-              Client: Any Adams
-            </h1>
-            <p className="text-justify">
-              <span className="font-bold">Description:</span> Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Dolores, enim eveniet?
-              Aliquam minus eum iste id quod qui iusto, totam
-            </p>
-          </div>
+    <>
+      <div className="m-8 md:mx-40">
+        <div>
+          <h1 className="font-bold text-lg text-slate-700 flex justify-center items-center border-b-2 md:text-4xl">
+            Projects
+          </h1>
         </div>
-        <div className="border-solid border-2 border-l-indigo-100 rounded-lg p-4 w-11/12 shadow-lg hover:scale-105 duration-100 cursor-pointer  md:w-full  md:flex justify-between items-center gap-3">
-          <div className="flex justify-center items-center">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/tV-_9N7UVpw?si=S_PbgILHt6YcTNcz"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div>
-            <h1 className="font-bold text-lg  my-1 text-gray-800 ">
-              Client: Marshal
-            </h1>
-            <p className="text-justify">
-              <span className="font-bold">Description:</span> Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Dolores, enim eveniet?
-              Aliquam minus eum iste id quod qui iusto, totam
-            </p>
+
+        <div className="">
+          <div className=" md:mx-80">
+            <Slider {...settings}>
+              {data.map((curElem, index) => (
+                <div
+                  key={index}
+                  className=" rounded-lg shadow-lg bg-slate-200 my-3 w-full m-auto md:h-[350px] md:w-[400px]"
+                >
+                  <div>
+                    <iframe
+                      src={curElem.video}
+                      frameborder="0"
+                      className="w-full h-full px-6 pt-3 md:h-[250px] md:w-[480px] md:m-auto"
+                    ></iframe>
+                  </div>
+                  <div>
+                    <p className="text-justify text-sm text-slate-800 px-6 py-3">
+                      <span className="font-bold text-slate-800 underline">
+                        Description:
+                      </span>{" "}
+                      {curElem.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

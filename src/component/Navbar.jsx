@@ -43,7 +43,7 @@ export const Navbar = () => {
             {navItems.map(({ id, name }) => (
               <li
                 key={id}
-                className="hover:text-green-600 md:text-lg text-gray-800"
+                className="hover:text-cyan-500 md:text-lg text-gray-800"
               >
                 {name}
               </li>
