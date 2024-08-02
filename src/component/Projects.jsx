@@ -75,7 +75,7 @@ export const Projects = () => {
   };
   return (
     <>
-      <div className="m-8 md:mx-40">
+      <div name="Project" className="m-8 md:mx-40">
         <div>
           <h1 className="font-bold text-lg text-slate-700 flex justify-center items-center border-b-2 md:text-4xl">
             Projects
@@ -93,7 +93,6 @@ export const Projects = () => {
                   <div>
                     <iframe
                       src={curElem.video}
-                      frameborder="0"
                       className="w-full h-full px-6 pt-3 md:h-[250px] md:w-[480px] md:m-auto"
                     ></iframe>
                   </div>

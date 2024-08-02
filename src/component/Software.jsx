@@ -2,7 +2,7 @@ import React from "react";
 
 export const Software = () => {
   return (
-    <div className="px-2 my-8 sm:px-40 sm:my-14">
+    <div name="Software" className="px-2 my-8  sm:px-40 sm:my-14">
       <h1 className="text-lg font-bold text-center text-gray-800 md:text-4xl border-b-2">
         Software
       </h1>

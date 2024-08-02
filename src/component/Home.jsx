@@ -4,7 +4,10 @@ import { ReactTyped } from "react-typed";
 const Home = () => {
   return (
     <>
-      <div className="px-2 my-8 flex flex-col sm:flex-row justify-between items-center grid-cols-2 sm:px-40 mt-24">
+      <div
+        name="Home"
+        className="px-2 my-8 flex flex-col sm:flex-row justify-between items-center grid-cols-2 sm:px-40 mt-24"
+      >
         <div className="order-2 mt-4 sm:order-1 sm:w-1/2">
           <div>
             <h1 className="font-extrabold text-lg sm:text-4xl">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -45,7 +46,7 @@ export const Navbar = () => {
                 key={id}
                 className="hover:text-cyan-500 md:text-lg text-gray-800"
               >
-                {name}
+                <Link to={name}>{name}</Link>
               </li>
             ))}
           </ul>
@@ -59,7 +60,9 @@ export const Navbar = () => {
                   key={id}
                   className="hover:bg-slate-300 rounded-lg text-base text-gray-900"
                 >
-                  {name}
+                  <Link onClick={() => setMenu(!menu)} to={name}>
+                    {name}
+                  </Link>
                 </li>
               ))}
             </ul>
